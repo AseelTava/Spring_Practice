@@ -1,4 +1,4 @@
-package com.cydeo.casefactory;
+package com.cydeo.bean_annotation.casefactory;
 
 public abstract class Case {
 

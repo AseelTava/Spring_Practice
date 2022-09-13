@@ -1,4 +1,4 @@
-package com.cydeo.config;
+package com.cydeo.bean_annotation.config;
 
 import com.cydeo.bean_annotation.casefactory.Case;
 import com.cydeo.bean_annotation.casefactory.DellCase;
@@ -14,35 +14,35 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class ComputerConfig {
 
-    @Bean(name="sony")
+    @Bean
     public Monitor monitorSony(){
-
-        return new SonyMonitor("25 inch Beast","Sony",25);
+        return new SonyMonitor("25 inch Beast", "Sony",25);
     }
-
-    @Bean(name="sony2")
-    public Monitor monitorSony2(){
-
-        return new SonyMonitor("40 inch Beast","Sony",40);
+@Bean
+    public Case caseDell (){
+        return new DellCase(" 220B", "Dell", "240");
     }
-
-
-    @Bean
-    @Primary
-    public Monitor monitorAcer(){
-        return new AcerMonitor("23 inch Beast","Acer",23);
-    }
-
-
-    @Bean
-    public Case caseDell(){
-        return new DellCase("220B","Dell","240");
-    }
-
-    @Bean
+@Bean
     public Motherboard motherboardAsus(){
-        return new AsusMotherboard("BJ-200","Asus",4,6,"v2.44");
+        return new AsusMotherboard("BJ-200", "Asus", 4,6,"v2.44");
     }
+
+//    @Bean(name="sony")
+//    public Monitor monitorSony(){
+//
+//        return new SonyMonitor("25 inch Beast","Sony",25);
+//    }
+//
+//    @Bean(name="sony2")
+//    public Monitor monitorSony2(){
+//
+//        return new SonyMonitor("40 inch Beast","Sony",40);
+//    }
+
+
+
+
+
 
 
 
