@@ -23,7 +23,7 @@ public class ComputerTest {
         ApplicationContext container = new AnnotationConfigApplicationContext(ComputerConfig.class,RandomConfig.class);
 
 
-        //Creating container by using BeanFactory
+        //Creating container by using BeanFactory  ,we normally use Applicationcontext
         BeanFactory context = new AnnotationConfigApplicationContext();
 
         System.out.println("************Retrieving the beans******************");
@@ -39,6 +39,8 @@ public class ComputerTest {
         dell.pressPowerButton();
 
         System.out.println("************Retrieving the beans******************");
+
+        // or different way we can do it
 
 //        Monitor theMonitor = container.getBean(Monitor.class);
 //        Case theCase = container.getBean(Case.class);

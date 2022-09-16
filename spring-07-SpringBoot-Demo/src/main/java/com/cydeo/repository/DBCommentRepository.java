@@ -1,4 +1,4 @@
-package com.cydoe.repository;
+package com.cydeo.repository;
 
 import com.cydoe.model.Comment;
 import org.springframework.stereotype.Component;
